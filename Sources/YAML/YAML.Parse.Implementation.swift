@@ -1,4 +1,4 @@
-private import Lexer_Primitives
+private import Lexer
 
 extension YAML.Parse {
     struct Implementation {

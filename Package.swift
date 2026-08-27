@@ -16,11 +16,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-primitives/swift-byte-primitives.git",
+            url: "https://github.com/swift-molecules/swift-byte.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-lexer-primitives.git",
+            url: "https://github.com/swift-molecules/swift-lexer.git",
             branch: "main"
         ),
         .package(url: "https://github.com/swift-standards/swift-yaml-standard.git", branch: "main"),
@@ -29,8 +29,8 @@ let package = Package(
         .target(
             name: "YAML",
             dependencies: [
-                .product(name: "Byte Primitive", package: "swift-byte-primitives"),
-                .product(name: "Lexer Primitives", package: "swift-lexer-primitives"),
+                .product(name: "Byte Primitive", package: "swift-byte"),
+                .product(name: "Lexer", package: "swift-lexer"),
                 .product(name: "YAML Standard", package: "swift-yaml-standard"),
             ],
             path: "Sources/YAML"
@@ -39,8 +39,8 @@ let package = Package(
             name: "YAML Tests",
             dependencies: [
                 .target(name: "YAML"),
-                .product(name: "Byte Primitive", package: "swift-byte-primitives"),
-                .product(name: "Byte Protocol Primitives", package: "swift-byte-primitives"),
+                .product(name: "Byte Primitive", package: "swift-byte"),
+                .product(name: "Byte Protocol", package: "swift-byte"),
             ],
             path: "Tests/YAML Tests"
         ),

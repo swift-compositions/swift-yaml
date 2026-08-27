@@ -2,7 +2,7 @@
 # Triaged by AI-assisted bulk pass (2026-04-29).
 description: "YAML parsing and serialization for Swift."
 topics:
-  - foundations
+  - compositions
   - yaml
 homepage: "https://swift-institute.org"
 readme:

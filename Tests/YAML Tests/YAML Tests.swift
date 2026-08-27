@@ -1,5 +1,5 @@
 import Byte_Primitive
-import Byte_Protocol_Primitives
+import Byte_Protocol
 import Testing
 import YAML
 

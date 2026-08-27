@@ -1,5 +1,5 @@
 public import Byte_Primitive
-private import Lexer_Primitives
+private import Lexer
 
 extension YAML.Parse {
     public static func events<C: Swift.Collection>(
