@@ -29,7 +29,7 @@ let package = Package(
         .target(
             name: "YAML",
             dependencies: [
-                .product(name: "Byte Primitive", package: "swift-byte"),
+                .product(name: "Byte", package: "swift-byte"),
                 .product(name: "Lexer", package: "swift-lexer"),
                 .product(name: "YAML Standard", package: "swift-yaml-standard"),
             ],
@@ -39,8 +39,7 @@ let package = Package(
             name: "YAML Tests",
             dependencies: [
                 .target(name: "YAML"),
-                .product(name: "Byte Primitive", package: "swift-byte"),
-                .product(name: "Byte Protocol", package: "swift-byte"),
+                .product(name: "Byte", package: "swift-byte"),
             ],
             path: "Tests/YAML Tests"
         ),
