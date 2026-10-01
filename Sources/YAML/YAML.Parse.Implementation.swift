@@ -1,4 +1,7 @@
+private import Cardinal
 private import Lexer
+private import Ordinal
+private import Text
 
 extension YAML.Parse {
     struct Implementation {

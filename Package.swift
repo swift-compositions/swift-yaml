@@ -24,6 +24,9 @@ let package = Package(
             branch: "main"
         ),
         .package(url: "https://github.com/swift-standards/swift-yaml-standard.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-text.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-ordinal.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-cardinal.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -32,6 +35,9 @@ let package = Package(
                 .product(name: "Byte", package: "swift-byte"),
                 .product(name: "Lexer", package: "swift-lexer"),
                 .product(name: "YAML Standard", package: "swift-yaml-standard"),
+                .product(name: "Text", package: "swift-text"),
+                .product(name: "Ordinal", package: "swift-ordinal"),
+                .product(name: "Cardinal", package: "swift-cardinal"),
             ],
             path: "Sources/YAML"
         ),

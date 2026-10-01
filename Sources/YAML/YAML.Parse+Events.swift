@@ -1,5 +1,7 @@
 public import Byte
 private import Lexer
+private import Ordinal
+private import Text
 
 extension YAML.Parse {
     public static func events<C: Swift.Collection>(
