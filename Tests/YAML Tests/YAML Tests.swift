@@ -32,7 +32,7 @@ extension YAML {
         }
 
         @Test func `byte input rejects malformed UTF 8`() {
-            let bytes: [Byte] = [0xC3, 0x28]
+            let bytes = [Byte(bitPattern: 0xC3), Byte(bitPattern: 0x28)]
             #expect(throws: YAML.Parse.Error.self) {
                 _ = try YAML.Parse.events(bytes)
             }
