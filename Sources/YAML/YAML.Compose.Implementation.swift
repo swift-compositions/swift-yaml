@@ -1,4 +1,4 @@
-private import YAML_Standard
+internal import YAML_Standard
 
 extension YAML.Compose {
     struct Implementation {

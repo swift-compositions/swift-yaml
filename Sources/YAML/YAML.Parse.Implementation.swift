@@ -2,7 +2,7 @@ private import Cardinal
 private import Lexer
 private import Ordinal
 private import Text
-private import YAML_Standard
+internal import YAML_Standard
 
 extension YAML.Parse {
     struct Implementation {
