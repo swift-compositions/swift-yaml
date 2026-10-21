@@ -1,15 +1,17 @@
+public import YAML_Standard
+
 extension YAML {
     @frozen
     public struct Limits: Sendable, Equatable {
 
-        // REASON: This is the only input limit, so there is no sibling API to group under `input`.
         // swift-linter:disable:next compound identifier
+        // REASON: This is the only input limit, so there is no sibling API to group under `input`.
         public let inputBytes: UInt
         public let events: UInt
         public let depth: UInt
 
-        // REASON: This is the only scalar limit, so there is no sibling API to group under `scalar`.
         // swift-linter:disable:next compound identifier
+        // REASON: This is the only scalar limit, so there is no sibling API to group under `scalar`.
         public let scalarLength: UInt
         public let nodes: UInt
         public let aliases: UInt

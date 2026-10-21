@@ -1,3 +1,5 @@
+public import YAML_Standard
+
 extension YAML.Compose {
     @frozen
     public struct Schema: Sendable, Equatable {

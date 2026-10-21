@@ -46,6 +46,7 @@ let package = Package(
             dependencies: [
                 .target(name: "YAML"),
                 .product(name: "Byte", package: "swift-byte"),
+                .product(name: "YAML Standard", package: "swift-yaml-standard"),
             ],
             path: "Tests/YAML Tests"
         ),

@@ -1,3 +1,5 @@
+private import YAML_Standard
+
 extension YAML.Compose {
     struct Implementation {
         private let events: [YAML.Serialization.Event]

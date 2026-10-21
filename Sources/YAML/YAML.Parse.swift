@@ -2,6 +2,7 @@ public import Byte
 private import Lexer
 private import Ordinal
 private import Text
+public import YAML_Standard
 
 extension YAML {
     public enum Parse {}

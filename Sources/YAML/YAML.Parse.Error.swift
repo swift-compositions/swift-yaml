@@ -1,4 +1,5 @@
 public import Lexer
+public import YAML_Standard
 
 extension YAML.Parse {
     @frozen

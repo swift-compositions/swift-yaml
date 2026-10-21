@@ -1,6 +1,7 @@
 import Byte
 import Testing
 import YAML
+import YAML_Standard
 
 extension YAML {
     @Suite struct Test {
