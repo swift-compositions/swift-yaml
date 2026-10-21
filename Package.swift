@@ -61,6 +61,8 @@ for target in package.targets where ![.system, .binary, .plugin, .macro].contain
             .enableUpcomingFeature("InternalImportsByDefault"),
             .enableUpcomingFeature("MemberImportVisibility"),
             .enableUpcomingFeature("NonisolatedNonsendingByDefault"),
-                .enableUpcomingFeature("InferIsolatedConformances"),
+            .enableUpcomingFeature("InferIsolatedConformances"),
+            .enableExperimentalFeature("Lifetimes"),
+            .treatAllWarnings(as: .error),
         ]
 }

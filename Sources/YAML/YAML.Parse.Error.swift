@@ -2,7 +2,7 @@ public import Lexer
 
 extension YAML.Parse {
     @frozen
-    public enum Error: Swift.Error, Sendable, Equatable {
+    public enum Error: Swift::Error, Sendable, Equatable {
         case inputLimit
         case eventLimit
         case depthLimit
